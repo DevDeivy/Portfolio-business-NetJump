@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout> 
+	<div class="wrapper">
+		<section class="center">
+			<h1>A place to display your masterpiece</h1>
+		</section>
+		
+		<div class="image">
+			<img src="../../public/image.png" alt="image">
+		</div>
+	
+		<section class="description">
+			<p class="description_text">Lorem ipsum,  molestiae reiciendis nulla recusandae , aliquam, incidunt libero rem architecto consequatur tempore eius laborum ipsum!</p>
+		</section>
+		
+
+		<div class="buttons">
+			<a href="" class="black">Joing for $9.99</a>
+			<a href="">Read more</a>
+		</div>
+	</div>
+</Layout>
+
+<style>
+
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.center{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	h1{
+		font-size: 5rem;
+		width: 60%;
+		letter-spacing: .2rem;
+	}
+
+	a{
+		padding: .5rem 1rem;
+		border-radius: .5rem;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.image{
+		display: flex;
+		justify-content: center;
+	}
+
+	.description{
+		display: flex;
+		justify-content: center;
+	}
+
+	.description_text{
+		width: 40%;
+	}
+
+	.buttons{
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.black{
+		background-color: #000;
+		color: #fff;
+	}
+</style>
