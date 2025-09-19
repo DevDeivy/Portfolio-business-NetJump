@@ -1,78 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Brands from '../components/brands.astro';
 ---
 
 <Layout> 
 	<div class="wrapper">
-		<section class="center">
-			<h1>A place to display your masterpiece</h1>
-		</section>
 		
-		<div class="image">
-			<img src="../../public/image.png" alt="image">
-		</div>
-	
-		<section class="description">
-			<p class="description_text">Lorem ipsum,  molestiae reiciendis nulla recusandae , aliquam, incidunt libero rem architecto consequatur tempore eius laborum ipsum!</p>
-		</section>
-		
-
-		<div class="buttons">
-			<a href="" class="black">Joing for $9.99</a>
-			<a href="">Read more</a>
+		<div class="description">
+			<div class="description_text">
+				<h3>Branding | Image making</h3>
+				<h1>My awesome portfolio</h1>
+				<p>And I made it myself! Yes. In Figma with Anima</p>
+			</div>
+			<img src="/public/circlesmain.webp" alt="circles">
 		</div>
 	</div>
+	
+	<div class="brands">
+		<hr>
+		<Brands></Brands> 
+		<hr>
+	</div>
+	
 </Layout>
 
 <style>
 
-	.wrapper{
+	.brands{
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+		padding: 0 5rem;
 	}
 
-	.center{
+	.wrapper{
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-	}
-
-	h1{
-		font-size: 5rem;
-		width: 60%;
-		letter-spacing: .2rem;
-	}
-
-	a{
-		padding: .5rem 1rem;
-		border-radius: .5rem;
-		background-color: rgba(0, 0, 0, 0.1);
-	}
-
-	.image{
-		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		gap: 10rem;
 	}
 
 	.description{
 		display: flex;
+		align-items: center;
 		justify-content: center;
+		height: 30rem;
+		width: 100%;
+		padding: 2rem 0;
+	}
+
+	.description img{
+		height: 30rem;
+		width: 30rem;
+		object-fit: contain;
 	}
 
 	.description_text{
-		width: 40%;
-	}
-
-	.buttons{
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		font-weight: normal;
+		width: 50%;
 		gap: 2rem;
 	}
 
-	.black{
-		background-color: #000;
-		color: #fff;
+	.description_text h1{
+		font-size: 6rem;
 	}
+	
 </style>

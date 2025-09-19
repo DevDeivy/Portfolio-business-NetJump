@@ -1,0 +1,84 @@
+<a href="/" class="back">
+    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g data-name="Layer 2"> <g data-name="arrow-ios-back"> <rect width="5" height="5" transform="rotate(90 12 12)" opacity="0"></rect> <path d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64z"></path> </g> </g> </g></svg>
+</a>
+<div class="wrapper">
+    <h1>Our latest works</h1>
+
+    <div class="images">
+        <div class="images_descriptions">
+            <img src="../../public/eye.jpg" alt="image1">
+            <section>
+                <h4>Free Bird</h4>
+                <p>Lynyrd Skynyrd</p>
+            </section>
+        </div>
+        <div class="images_descriptions">
+            <img src="../../public/circle.jpg" alt="image2">
+            <section>
+                <h4>Purple Haze</h4>
+                <p>Lynyrd Skynyrd</p>
+            </section>
+        </div>
+        <div class="images_descriptions">
+            <img src="../../public/moon.jpg" alt="image3">
+            <section>
+                <h4>You Really Got Me</h4>
+                <p>Lynyrd Skynyrd</p>
+            </section>
+        </div>
+        <div class="images_descriptions">
+            <img src="../../public/stars.jpg" alt="image4">
+            <section>
+                <h4>American Girl</h4>
+                <p>Lynyrd Skynyrd</p>
+            </section>
+        </div>
+        <div class="images_descriptions">
+            <img src="../../public/flowers.jpg" alt="image5">
+            <section>
+                <h4>Whole Lotta Love</h4>
+                <p>Lynyrd Skynyrd</p>
+            </section>
+        </div>
+        <div class="images_descriptions">
+            <img src="../../public/circlegreen.jpg" alt="image6">
+            <section>
+                <h4>Under Pressure </h4>
+                <p>Lynyrd Skynyrd</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .back svg{
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .images{
+        display: grid;
+        gap: 1.5rem 6rem;
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .images_descriptions img{
+        width: 16rem;
+        height: 16rem;
+        object-fit: contain;
+    }
+
+    h4{
+        margin: 0;
+        padding: 0;
+    }
+</style>
